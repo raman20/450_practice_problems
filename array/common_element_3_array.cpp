@@ -24,7 +24,7 @@ std::pair<int*,int> common(int* arr1, int* arr2, int s1, int s2)
 			j++;
 		}
 	}
-	return {arr3,k};
+	return {arr3,k-1};
 }
 
 int main()
