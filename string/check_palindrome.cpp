@@ -5,7 +5,7 @@ int main()
 {
 				int size;
 				cin >> size;
-				char a[size];
+				char a[size+1];
 				cin >> a;
 				bool check = 1;
 
