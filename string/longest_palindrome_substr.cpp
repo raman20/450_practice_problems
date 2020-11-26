@@ -8,7 +8,7 @@ int main()
     s.shrink_to_fit();
     int max{1};
     int count{0};
-    int s_index,e_index;
+    int s_index{0},e_index{0};
     for(int i = 1; i < s.size()-1; i++)
     {
         count = 0;
