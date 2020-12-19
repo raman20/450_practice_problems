@@ -3,25 +3,24 @@ using namespace std;
 
 int main()
 {
-    string s1;
-    cin >> s1;
-
-    //s1.shrink_to_fit();
-
-    for(int i{0}; i < s1.size(); ++i)
+    string s;
+    cin >> s;
+    
+    for(int curr{0}; curr < s.length(); ++curr)
     {
-      cout << s1[i] << endl;
-      for(int m{0};m < s1.size()-i-1;++m){
-        for(int j{0}; j < s1.size()-i-1; ++j)
-        {
-            cout << s1[i];
-            for(int k{i+1+m}; k <= i+1+j; ++k)
+      for(int st{curr+1};st < s.length(); ++st)
+      {
+          cout << s[curr];
+
+            for(int end{st}; end < s.length(); ++end)
             {
-                cout << s1[k];
+                for(int k{st}; k <= end; ++k)
+                {
+                    cout << s[k];
+                }
+                cout << endl;
             }
-            cout << endl;
         }
-      }
     }
     cout << endl;
     return 0;
