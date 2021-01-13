@@ -1,27 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void substring(string ip, string op)
+{
+    if(ip.length() == 0)
+    {
+        cout << op << endl;
+        return;
+    }
+    
+
+    substring(ip.substr(1,ip.length()-2), op);
+    substring(ip.substr(1,ip.length()-2), op+ip[0]);
+
+}
+
 int main()
 {
     string s;
     cin >> s;
     
-    for(int curr{0}; curr < s.length(); ++curr)
-    {
-      for(int st{curr+1};st < s.length(); ++st)
-      {
-          cout << s[curr];
-
-            for(int end{st}; end < s.length(); ++end)
-            {
-                for(int k{st}; k <= end; ++k)
-                {
-                    cout << s[k];
-                }
-                cout << endl;
-            }
-        }
-    }
+    substring(s, "");
     cout << endl;
     return 0;
 }
