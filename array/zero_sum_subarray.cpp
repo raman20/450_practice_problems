@@ -30,7 +30,7 @@ bool zero_sum_subArray(int arr[],int n)
         return true;
     }
 
-    bool r1 = zero_sum_subArray(arr+1,n-1)
+    bool r1 = zero_sum_subArray(arr+1,n-1);
     bool r2 = zero_sum_subArray(arr,n-1);
     bool r3 = (r1||r2);
 
