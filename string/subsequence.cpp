@@ -10,8 +10,8 @@ void substring(string ip, string op)
     }
     
 
-    substring(ip.substr(1,ip.length()-2), op);
-    substring(ip.substr(1,ip.length()-2), op+ip[0]);
+    substring(ip.substr(1,ip.length()-1), op);
+    substring(ip.substr(1,ip.length()-1), op+ip[0]);
 
 }
 
