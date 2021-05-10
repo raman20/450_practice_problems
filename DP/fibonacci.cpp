@@ -21,8 +21,8 @@ int fib(int n, int memo[])
 
 int main()
 {
-    int n{10};
-    int memo[n] = {0};
+    int n{100};
+    int memo[n] = {-1};
     cout << fib(n, memo) << endl;
 
     return 0;
