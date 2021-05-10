@@ -33,9 +33,11 @@ int main()
                 e_index = k-1;
             }
         }
-        else if(s[i]==s[i+1])
+        else if(s[i]==s[i-1])
         {
             int j{i-1},k{i+2};
+            s_index = j;
+            e_index = i;
             count = 2;
             while(j >=0 && k < s.size())
             {
