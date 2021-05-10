@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void substring(string ip, string op)
+void subsequence(string ip, string op)
 {
     if(ip.length() == 0)
     {
@@ -10,8 +10,8 @@ void substring(string ip, string op)
     }
     
 
-    substring(ip.substr(1,ip.length()-1), op);
-    substring(ip.substr(1,ip.length()-1), op+ip[0]);
+    subsequence(ip.substr(1,ip.length()-1), op);
+    subsequence(ip.substr(1,ip.length()-1), op+ip[0]);
 
 }
 
@@ -20,7 +20,7 @@ int main()
     string s;
     cin >> s;
     
-    substring(s, "");
+    subsequence(s, "");
     cout << endl;
     return 0;
 }
