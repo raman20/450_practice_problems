@@ -1,3 +1,5 @@
+//using recursion
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -25,8 +27,8 @@ bool tripletSum(int arr[], int n, int k)
 int main()
 {   
     //-----------test-input------------
-    int arr[] = {1,2,4,3,6};
-    int m{10};
+    int arr[] = {0,-1,2,-3,1};
+    int m{0};
     int n = sizeof(arr)/sizeof(arr[0]);
     //---------------------------------
         
