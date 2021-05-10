@@ -4,9 +4,9 @@ using namespace std;
 int main()
 {
     //------------------test-input------------------------
-    int choc_pack[] = {7,3,2,4,9,12,56};
+    int choc_pack[] = {3,4,1,9,56,7,9,12};
     int size = sizeof(choc_pack)/sizeof(choc_pack[0]);
-    int students = 3;
+    int students = 5;
     //----------------------------------------------------
 
     int min_diff{INT_MAX};
