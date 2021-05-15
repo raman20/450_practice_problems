@@ -49,7 +49,7 @@ int Distance(Node *root, int node1, int node2)
             store.pop();
         }
     }    
-    if(min < INT_MAX)
+    if(min == INT_MAX)
     {
         min = -1;
     }
